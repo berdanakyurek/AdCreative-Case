@@ -1,0 +1,6 @@
+* AdCreative.ai Case
+  Bu case, AdCreative.ai iş başvurusu kapsamında yapılmıştır.
+  [[https://github.com/sahinkutlu/frontend-case][Case]]
+  [[rickandmortyapi.com/documentation/][Rick And Morty Api]] kullanılarak, Typescript ve React ile, Rick and Morty karakterlerinin
+  seçilebildiği bir Autocomplete componenti tasarlanmıştır.
+  Projenin canlı haline [[][buradan]] ulaşılabilir. (TODO: link eklenecek)

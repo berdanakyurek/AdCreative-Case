@@ -92,14 +92,14 @@ const RickAndMortyAutocomplete = (props: IRickAndMortyAutocompleteProps):JSX.Ele
             ...params.InputProps,
             startAdornment: (
               <>
-                     {params.InputProps.endAdornment}
-                     {
-                       (query.isFetching || query.isLoading) &&
-                       <CircularProgress
-                         color="inherit"
-                         size={20}
-                       />
-                     }
+                {
+                  (query.isFetching || query.isLoading) &&
+                  <CircularProgress
+                    color="inherit"
+                    size={20}
+                  />
+                }
+                {params.InputProps.startAdornment}
               </>
             )
           }}
