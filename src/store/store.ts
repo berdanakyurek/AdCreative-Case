@@ -7,7 +7,7 @@ export const store = configureStore({
   },
   
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(rickAndMortyApi.middleware),
+    getDefaultMiddleware({serializableCheck: false}).concat(rickAndMortyApi.middleware),
 })
 
 export type RootState = ReturnType<typeof store.getState>;
