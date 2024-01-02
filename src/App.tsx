@@ -3,6 +3,7 @@ import './App.css';
 import RickAndMortyAutocomplete from './components/RickAndMortyCharacterAutocomplete';
 import RickAndMortyCharacter from './models/RickAndMortyCharacter';
 import { Grid } from '@mui/material';
+import { Link } from '@mui/material';
 
 function App() {
   // Secili karakterlerin tutuldugu state, baslangicta bos. 
@@ -27,6 +28,15 @@ function App() {
             {k?.name}
           </li>)}
         </ol>
+      </Grid>
+      <Grid item xs={12} height="100%">
+        <Link
+          href="https://github.com/berdanakyurek/AdCreative-Case"
+          target="_blank"
+        >
+          Kaynak Kod
+        </Link> 
+        
       </Grid>
     </Grid>
   );
