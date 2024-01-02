@@ -21,6 +21,7 @@ const RickAndMortyAutocomplete = (props: IRickAndMortyAutocompleteProps):JSX.Ele
       
       loading={query.isLoading || query.isFetching}
       ListboxProps={{
+        // Scroll en alta ulastiysa sonraki sayfayi api'den getirip sona ekle 
         onScroll: (e)=>{
           const target = e.target as HTMLDivElement;
           const { scrollTop, scrollHeight, clientHeight } = target;
@@ -40,6 +41,7 @@ const RickAndMortyAutocomplete = (props: IRickAndMortyAutocompleteProps):JSX.Ele
         }
       }}
       onBlur={()=>{
+        // Blur halinde sifirla 
         setKarakterAramaSorgu({
           aramaMetni: "",
           sayfa: 1

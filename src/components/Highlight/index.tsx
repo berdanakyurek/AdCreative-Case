@@ -6,9 +6,12 @@ interface HighlightProps {
 // fullString içerisinde matchString'leri bulup highlight edilmiş halde gösteren component
 const Highlight = (props: HighlightProps):JSX.Element => {
 
+
+  // gereksiz bosluklari at 
   let fullString = props.fullString.trim();
   let matchString = props.matchString.trim();
 
+  // highliht edilecek string yoksa direk stringi dondur 
   if(!matchString)
     return (
       <div>
@@ -21,10 +24,13 @@ const Highlight = (props: HighlightProps):JSX.Element => {
         </span>
       </div>
     )
+
+  // case-insensitive yapmak icin uppercase'e cevir 
   let matchStringUpper = matchString.toUpperCase();
 
   let res = [];
-  
+
+  // string icerisinde highlight edilecek kisimlari bul 
   while (true) {
     let fullStringUpper = fullString.toUpperCase();
     let index = fullStringUpper.search(matchStringUpper);
@@ -53,7 +59,8 @@ const Highlight = (props: HighlightProps):JSX.Element => {
     }
 
   }
-  
+
+  // highliht edilmis div componentini dondur 
   return (
     <div>
       {res.map(r =>
