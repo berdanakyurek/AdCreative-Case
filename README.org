@@ -4,4 +4,4 @@
   [[rickandmortyapi.com/documentation/][Rick And Morty Api]] kullanılarak, Typescript ve React ile, Rick and Morty karakterlerinin
   seçilebildiği bir Autocomplete componenti tasarlanmıştır.
   
-  Projenin canlı haline [[][buradan]] ulaşılabilir. (TODO: link eklenecek)
+  Projenin canlı haline [[https://ad-creative-case.vercel.app/][buradan]] ulaşılabilir. (TODO: link eklenecek)
